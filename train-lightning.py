@@ -60,11 +60,11 @@ class TinyShakespeareDataModule(L.LightningDataModule):
         self.val_data = TinyShakespeareDataSet(data[n:])
 
     def train_dataloader(self):
-        return DataLoader(self.train_data, batch_size=self.batch_size, num_workers=10, persistent_workers=True)
+        return DataLoader(self.train_data, batch_size=self.batch_size, num_workers=36, persistent_workers=True)
 
     def val_dataloader(self):
         # lightning will lazily evaluate dataloaders as needed
-        return DataLoader(self.val_data, batch_size=self.batch_size, num_workers=10, persistent_workers=True)
+        return DataLoader(self.val_data, batch_size=self.batch_size, num_workers=36, persistent_workers=True)
 
 
 class LightningGPT(L.LightningModule):
@@ -105,8 +105,8 @@ if __name__ == '__main__':
     wandb_logger = WandbLogger(log_model="all", project="lightning-gpt")
 
     # train model
-    num_devices = 1
-    gpus_per_device = 1
+    num_devices = 2
+    gpus_per_device = 4
 
     trainer = L.Trainer(accelerator="cpu", devices=num_devices, num_nodes=gpus_per_device, logger=wandb_logger, max_epochs=5, strategy='ddp')
     trainer.fit(model=lightning_model, datamodule=data_module)
