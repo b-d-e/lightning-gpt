@@ -1,0 +1,41 @@
+  | Name    | Type             | Params
+---------------------------------------------
+0 | decoder | GPTLanguageModel | 10.9 M
+---------------------------------------------
+10.9 M    Trainable params
+0         Non-trainable params
+10.9 M    Total params
+43.743    Total estimated model params size (MB)
+
+Sanity Checking: |                                                                                                                                                                              | 0/? [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:   0%|▏                                                                                                                                                     | 41/33106 [01:09<15:39:17,  0.59it/s, v_num=kfhi]
+
+Epoch 0:   0%|▏                                                                                                                                                     | 42/33106 [01:11<15:36:27,  0.59it/s, v_num=kfhi]

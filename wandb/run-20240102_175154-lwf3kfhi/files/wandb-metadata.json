@@ -1,0 +1,37 @@
+{
+    "os": "macOS-13.6-arm64-arm-64bit",
+    "python": "3.11.6",
+    "heartbeatAt": "2024-01-02T17:51:55.109460",
+    "startedAt": "2024-01-02T17:51:54.436872",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/betheridge/Documents/l&d/lightning-gpt/train-lightning.py",
+    "codePathLocal": "train-lightning.py",
+    "codePath": "train-lightning.py",
+    "git": {
+        "remote": "git@github.com:b-d-e/lightning-gpt.git",
+        "commit": "deaaa5e67e8fcedd96cae54f0764d681c39aebcf"
+    },
+    "email": "betheridge@turing.ac.uk",
+    "root": "/Users/betheridge/Documents/l&d/lightning-gpt",
+    "host": "660-PM2GT7J610",
+    "username": "betheridge",
+    "executable": "/opt/homebrew/opt/python@3.11/bin/python3.11",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 9.11983871459961
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 32.0
+    }
+}
